@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    
+}
+
+h1 {font-size: 3,5em;}
+h2 {font-size: 2,7em;}
+h3 {font-size: 2em;}
+p {font-size: 1,25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+background-color: rgb(233, 130, 14);
+
+}
+
+button:hover{
+    background-color: greenyellow;
+}
+.container{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.color-acento{color:black;}
+
+
+header{
+    background-color: aliceblue;
+    overflow: hidden;
+  
+}
+header a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header .logo{
+margin: 0;
+
+padding: 10px 39px;}
+
+header .container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+header a {
+    padding: 4px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+Header a:hover {
+    color: blue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5) 0%, 
+        rgba(0,0,0,0.5) 0%
+    ),
+     url("media/Hero.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+
+}
+
+#hero h1{
+    color: white;
+    font-size: 3em;
+}
+
+#psicologia .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+
+#NuestrosServicios{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+}
+
+#NuestrosServicios .container{
+    text-align: center;
+    padding: 100 12px;
+
+}
+
+#NuestrosServicios h2{
+    margin-top: 0;
+}
+
+#NuestrosServicios p{
+    display: none;
+}
+
+#NuestrosServicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#NuestrosServicios .carta{
+  
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/1872634.png");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/3912748.png");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/445228.png");
+
+}
+
+
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    color:black;
+}
+   #pidecita .container{
+        text-align: initial;
+        
+    }
+
+
+    #pidecita{
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+        
+    }
+
+    #pidecita h2{
+        font-size: 3em;
+    }
+
+    #pidecita button{
+        font-size: 1em;
+    }
+
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .social{
+        /*las imágenes usadas tienen width de 48px*/
+        width:48px;
+        position:fixed;
+        top:50px;
+        right:0;
+    }
+
+    /* Extra centrado vertical*/
+
+    .social{
+        /*border:1px solid #000;*/
+        top:50%;
+        height:205px;
+        /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+        margin-top:-100px;
+    }
+
+    
+}
+
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 70px;
+    }
+
+    #hero h1{
+        font-size: 3em;
+        color: aliceblue;
+    }
+
+    #psicologia{
+        display: flex;
+        justify-content: center;
+    }
+
+    #psicologia .container{
+        background-color: black;
+        color: aliceblue;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+    #psicologia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+     
+        
+        
+    }
+
+    #psicologia h2{
+        margin-top: center;
+    }
+
+    #psicologia .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-position: auto ;
+        padding: 30px 30px;
+        background-image: url("media/1634197.png");
+        background-size: cover;
+        background-position: center center;
+         
+       
+    }
+
+    #NuestrosServicios .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #NuestrosServicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #NuestrosServicios h2{
+        font-size: 4em;
+    }
+
+    #NuestrosServicios h3{
+        margin-top: 0;
+    }
+
+    #NuestrosServicios .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/1872634.png");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/2979107.png");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/4314636.png");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/110850.png");
+        background-repeat: no-repeat;
+        background-position: auto ;
+        padding: 30px 30px;
+        background-size: cover;
+     background-position: center center;
+    }
+
+    #caracteristicas .container{
+        background-image: flex;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    }
+
+    #caracteristicas ul{
+        margin-left: 30px;
+        color: white;
+    }
+    #pidecita .container{
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+
+    #pidecita{
+       
+        background-repeat: no-repeat;
+        background-size: 1200px 1200px;
+        align-content:center;
+        background-position: calc(100vw);
+    }
+    #pidecita .container{
+      
+        background-image: url("media/1748450.png");
+     
+        background-position: center center;
+      background-image: none;
+      
+    }
+
+    #pidecita h2{
+        font-size: 5em;
+    }
+
+    #pidecita button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+
