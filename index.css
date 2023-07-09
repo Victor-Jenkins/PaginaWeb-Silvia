@@ -42,7 +42,7 @@ button:hover{
 
 
 header{
-    background-color: aliceblue;
+    background-color:aliceblue;
     overflow: hidden;
   
 }
@@ -63,7 +63,7 @@ padding: 10px 39px;}
 header .container  {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
    
 
 }
@@ -89,28 +89,60 @@ Header a:hover {
 }
 
 #hero{
-    display: flex;
+    display: relative;
     align-items: center;
     justify-content: center;
+    position:static;
     text-align: center;
-    flex-direction: column;
-    height: 90vh;
+    flex-direction: auto;
+    height: 100vh;
     background-image:linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.5) 0%, 
-        rgba(0,0,0,0.5) 0%
+        0deg,
+        rgba(0,0,0,0.2) 0%,
+        rgba(0,0,0,0.2) 0%
     ),
-     url("media/Hero.png");
+     url("media/ls.png");
+
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
 
 }
+#hero .container{
+  position:relative;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+align-content:center;
+
+
+}
 
 #hero h1{
+  position:relative;
+  display: flex;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
+top:-80px;
+right : -90px;
 }
+#hero .eye{
+display: flex;
+  position:relative;
+  height:200px;
+  width:200px;
+  left : -320px;
+   right : 10px;
+top:130px;
+  z-index: 1;
+
+
+
+}
+
+
+
+
 
 #psicologia .texto{
     width: 50%;
@@ -120,8 +152,7 @@ Header a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
+
 }
 
 
@@ -129,6 +160,7 @@ Header a:hover {
     background-color: black;
     color:aliceblue;
     text-align: center;
+    background: linear-gradient(black, aliceblue);
 }
 
 #NuestrosServicios .container{
@@ -274,7 +306,7 @@ footer .container{
 }
 
 
-@media (min-width: 850px){
+@media (min-width: 650px){
     header{
         position: fixed;
         width: 100%;
@@ -290,36 +322,44 @@ footer .container{
         padding-bottom: 0;
         padding-right: 70px;
     }
-
+#hero button{
+font-size: 3em;
+        color: aliceblue;
+}
     #hero h1{
         font-size: 3em;
         color: aliceblue;
+        display: flex;
+                justify-content: space-evenly;
     }
 
     #psicologia{
         display: flex;
         justify-content: center;
+position:relative;
+
     }
 
     #psicologia .container{
+    position:relative;
         background-color: black;
         color: aliceblue;
         display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
+font-size: 19px;
     }
 
     #psicologia .texto{
         width: 50%;
-        max-width: 600px;
+        max-width: 500px;
         text-align: center;
         padding-left: 30px;
         display: flex;
         flex-direction: column;
-     
-        
+
+        font-size: 19px;
         
     }
 
@@ -328,7 +368,9 @@ footer .container{
     }
 
     #psicologia .img-container{
+        position:relative;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -336,10 +378,14 @@ footer .container{
         height: 90vh;
         background-position: auto ;
         padding: 30px 30px;
-        background-image: url("media/1634197.png");
+
         background-size: cover;
         background-position: center center;
-         
+    background-image:linear-gradient(
+           0deg,
+           rgba(0,0,0,0.5) 0%,
+           rgba(0,0,0,0.5) 0%
+       ),url("media/1634197.png");
        
     }
 
@@ -424,15 +470,44 @@ footer .container{
     #pidecita .container{
         padding: 30px 30px;
         text-align: center;
+        align:center;
+        align-content:center;
+    }
+#pidecita1{
+
+   background-image: url("media/73687988.png");
+    background-repeat: no-repeat;
+    background-position: auto ;
+            padding: 30px 30px;
+            background-size: cover;
+         background-position: center center;
+
+
+
+    }
+    #pidecita1 h2{
+    color:white;
+        }
+  #pidecita1 .container{
+
+      background-position: center right;
+align:center;
+align-content:center;
     }
 
+    #pidecita button{
+            font-size: 1em;
+            align:center;
+align-content:center;
 
+        }
     #pidecita{
        
         background-repeat: no-repeat;
         background-size: 1200px 1200px;
         align-content:center;
         background-position: calc(100vw);
+        background: linear-gradient(aliceblue, black);
     }
     #pidecita .container{
       
@@ -453,8 +528,17 @@ footer .container{
 
     footer .container{
         justify-content: flex-end;
-        align-items: center;
+        align-items: left;
+
     }
+    footer .social{
+            justify-content: center;
+            align-items: right;
+
+        text-align: center;
+
+        }
+
 
 
 
